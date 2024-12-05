@@ -19,6 +19,7 @@ services:
   kafka:
     image: confluentinc/cp-kafka:latest
     container_name: kafka
+    restart: always
     ports:
       - "19092:9092"
       - "9997:9997"
